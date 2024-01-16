@@ -14,6 +14,7 @@ router.post('/login', userController.loginUser);
 // Get user profile
 router.get("/", verifyUser, userController.getUserProfile);
 
+
 // Upload image
 router.post("/uploadImage", verifyUser, upload, userController.uploadImage);
 
